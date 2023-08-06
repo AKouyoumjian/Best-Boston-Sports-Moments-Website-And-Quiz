@@ -1,0 +1,144 @@
+body {
+  background-color: lightblue;
+  border: 2px solid black;
+  font-family: "Times New Roman", Times, serif;
+  margin: 25px;
+  padding: 25px;
+}
+
+.head1 {
+  color: white;
+  font-size: 60px;
+  text-align: center;
+  margin: 5px;
+  background-color: MediumSeaGreen;
+  border: 2px solid black;
+}
+
+/* class for bolded words */
+.bold {
+  font-weight: bolder;
+}
+
+/* a description is the text corresponding to one of the best boston sports moments. Each has a description. */
+.description {
+  font-family: "Times New Roman", Times, serif;
+  font-size: 22px;
+  padding: 15px;
+  color: darkgreen;
+  background-color: peachpuff;
+  border: 2px solid black;
+  margin: 10px;
+  display: block; /* set default display to be showing */
+}
+
+#toggleButton {
+  background: white;
+  color: black;
+  font-size: 15px;
+  font-weight: 500;
+  height: 35px;
+  width: 160px;
+  border: 2px dashed black;
+  padding: 5px;
+  margin: 10px 0;
+  text-align: center;
+  border-radius: 4px;
+  cursor: pointer; /* change cursor to show pointer when hover over it */
+  transition: all 0.25s; /* how quick hover shows from when it is registered */
+}
+
+.openPageBtn {
+  background: white;
+  color: black;
+  font-size: 15px;
+  font-weight: 500;
+  height: 35px;
+  width: 125px;
+  border: 2px solid red;
+  padding: 5px;
+  margin: 10px 0;
+  text-align: center;
+  border-radius: 4px;
+  cursor: pointer; /* change cursor to show pointer when hover over it */
+  transition: all 0.25s; /* how quick hover shows from when it is registered */
+}
+
+
+/* CSS FOR QUIZ */
+
+.app {
+  background: white;
+  width: 90%;
+  max-width: 600px;
+  margin: 100px auto 0;
+  border: 2px solid black; /* Add the border style and width */
+  border-radius: 10px;
+  padding: 35px;
+}
+
+.app h1 {
+  font-size: 25px;
+  color: #001e4d;
+  font-weight: 600;
+  border-bottom: 1px solid #333;
+  padding-bottom: 30px;
+}
+
+.quiz {
+  padding: 15px 0;
+}
+
+.quiz h2 {
+  font-size: 25px;
+  color: black;
+  font-weight: 600;
+}
+
+.btn {
+  background: white;
+  color: black;
+  font-size: 15px;
+  font-weight: 500;
+  width: 100%;
+  border: 1.5px solid black;
+  padding: 10px;
+  margin: 10px 0;
+  text-align: left;
+  border-radius: 4px;
+  cursor: pointer; /* change cursor to show pointer when hover over it */
+  transition: all 0.25s; /* how quick hover shows from when it is registered */
+}
+
+/* when user hovers with cursor over a button and it is not disabled. */
+.btn:hover:not([disabled]) {
+  background: navy;
+  color: white;
+}
+
+/* when button is disabled, we want no-drop for cursor. */
+.btn:disabled {
+  cursor: no-drop;
+}
+
+#next-btn {
+  background: darkmagenta;
+  color: #fff;
+  font-size: 25px;
+  font-weight: 500;
+  width: 200px;
+  height: 170px;
+  border: 0;
+  margin: 20px auto 0;
+  border-radius: 50%; /* makes button a circle */
+  cursor: pointer;
+  display: none;
+}
+
+/* styles for correct and incorrect answer selections */
+.correct {
+  background: lightgreen;
+}
+.incorrect {
+  background: rgb(222, 79, 79);
+}

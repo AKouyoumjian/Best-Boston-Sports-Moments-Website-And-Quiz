@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang=en-US>
+
+<head>
+    <title> Best Boston Sports Moments </title>
+    <link rel='icon' type='image/x-icon' href='favicon.png'>
+    <script src="script.js"></script> <!-- this is the script for the information portion of the site.-->
+    <link rel="stylesheet" href="style.css">
+
+
+</head>
+
+<body>
+
+    <img id="topImage" src=BostonHeader.webp alt="Boston Sports Teams image" height="215" width="1320">
+
+    <h1 class="head1"> 
+        <b>My Favorite Boston Sports Moments</b></h1>
+
+    <h2 style="color:black; font-size: 25px; margin: 1px;text-align: center"> <u>By Alex Kouyoumjian</u> </h2>
+
+
+    
+    <!-- this button hides and shows the descriptions for the moments-->
+    <h3> 
+        <button id="toggleButton" onclick="toggleDescription()">Hide Descriptions</button>
+    </h3>
+
+
+    <h3 title="Click here for video" style="font-size: 20px;"> <a href="https://www.youtube.com/watch?v=HJyxzaLNlNw"
+            target=_blank> 1. 2013 ALCS Game 2 </a> &nbsp; <!-- &nbsp adds a space to look better (non-breaking space entity)-->
+        <button class="openPageBtn" onclick="openPage('https://www.youtube.com/watch?v=HJyxzaLNlNw')"> Watch Video </button>
+
+    </h3>
+
+
+    <p class="description">
+
+        <img src=ortiz_image.jpg alt="Ortiz Homerun image" style="width:250px;height:250px;">
+
+
+        <br>
+
+        Down by four runs in the 8th inning with 2 outs, <b> David Ortiz</b> delivers in the clutch with a grand slam on the
+        first pitch he sees from relief-pitcher Juaquim Benoit. Sending <span class="bold">Fenway </span> into a frenzy, the homerun would 
+        provide Boston with the momentum needed to eventually win the game in the following inning with a walk-off single. The Sox would go on
+        to win the Series and eventually the WS.
+    </p>
+
+    <hr>
+    <h3 title="Click here for video" style="font-size: 20px;"> <a href=https://www.youtube.com/watch?v=gY8exXZgyqc
+            target=_blank> 2. Superbowl LIII (28 to 3) &nbsp; </a>
+
+        <button class="openPageBtn" onclick="openPage('https://www.youtube.com/watch?v=gY8exXZgyqc')"> Watch Video </button>
+
+
+    </h3>
+
+    <p class="description">
+
+        <img src=Brady_28to3.png alt="Brady meme 28 to 3" height="250" width="250">
+
+        <br>
+
+        <b> Tom Brady </b> leads the Patriots from down 28-3 in the third quarter to win SuperBowl LI. The game would go to Overtime, where 
+        running-back James White would recieve a toss from Brady and score the winning touchdown.
+        Achieving the greatest comeback in <abbr title="SuperBowl"> SB</abbr>  history, as well as potentially the best all time,
+         <i> the GOAT</i>, earns his fourth ring with New England. 
+
+
+    </p>
+
+    <hr>
+
+    <h3 title="Click here for video" style="font-size: 20px;"> <a href=https://www.youtube.com/watch?v=ZTnZO5H-kAY
+            target=_blank> 3. 2018 WS Game 6 </a> &nbsp; 
+
+        <!--  Using internal js.
+        <button onclick="window.open('https://www.youtube.com/watch?v=ZTnZO5H-kAY')"> Click here for video </button>
+        -->
+
+        <button class="openPageBtn" onclick="openPage('https://www.youtube.com/watch?v=ZTnZO5H-kAY')"> Watch Video </button>
+
+
+    </h3>
+    <p class="description">
+
+        <img src=Sale_2018WS.png alt="Sale Strikeout image" width="250" height="250">
+
+        <br>
+
+        Boston, needing one more out to win the World Series, turns to their star, <b>Chris Sale.</b> He would face Manny
+        Machado, who previously injured
+        beloved Sox star, <b>Dustin Pedroia, </b> on a dirty slide. Sale would strike him out with a filthy slider to win the championship
+        for Boston. This would be the Red Sox's fourth world series of the century, firming their position as the most successful baseball 
+        team in the 21st century. 
+
+    </p>
+
+
+    <hr>
+
+    <h3 title="Click here for video" style="font-size: 20px;"> <a href=https://www.youtube.com/watch?v=ccmi-XJMUgQ
+            target=_blank>
+            4. Boston Celtics Beat the Lakers in Game 6 of 2008 NBA Finals </a> &nbsp;
+
+        <button class="openPageBtn" onclick="openPage('https://www.youtube.com/watch?v=ccmi-XJMUgQ')"> Watch Video </button>
+
+
+    </h3>
+
+    <p class="description">
+
+        <img src=https://www.bostoncelticshistory.com/wp-content/uploads/2021/09/Bostons-Heart-and-Soul-768x923.jpg alt="Garnett Holds 2008 Finals Trophy" height="250" width="250">
+
+        <br>
+
+        Having not won a championship since 1986 with Larry Bird, Celtics fans were starving for their team to hoist the Larry O'Brien 
+        Championship Trophy. Facing Kobe Bryant, Pau Gasol, and a formidable Los Angeles Lakers team, the Celtics big-three of 
+        Kevin Garnett, Paul Pierce, and Ray Allen would win the series in six games.
+
+    </p>
+
+    <hr>
+
+    <h3 title="Click here for video" style="font-size: 20px;"> <a href=https://www.youtube.com/watch?v=1NttSTenyEk
+            target=_blank>
+            5. David Ortiz Legendary Speech Following Boston Marathon Bombing </a> &nbsp;
+
+        <button class="openPageBtn" onclick="openPage('https://www.youtube.com/watch?v=1NttSTenyEk')"> Watch Video </button>
+
+
+    </h3>
+
+    <p class="description">
+
+        <img src=https://pyxis.nymag.com/v1/imgs/346/649/81e8198acb8d5571bfbae7234c2ee92481-03-david-ortiz-speech.2x.rsocial.w600.jpg 
+        alt="David Ortiz during speech" height="250" width="350">
+
+        <br>
+
+        Following the tragic Boston Marathon Bombing in 2013, leader of the Boston Red Sox, <b>David Ortiz</b>, delivers a passionate
+        speech declaring, 
+        <q>This is our (expletive) city. And nobody's gonna dictate our freedom. Stay strong.</q> Ortiz's words would help rally the city 
+        to remain strong during the tragic time. Just six months later, Boston would go on to win the 2013 World Series.
+
+    </p>
+
+    <hr>
+
+    <br> <br>
+
+
+
+
+
+    <h1 class="head1"; style="color: red">
+        Quiz Available Below
+    </h1>
+
+    <h2 style="text-align:center; font-size: 35px;">
+        Test your knowledge and take a quiz on Boston Sports Trivia!
+    </h2>
+
+
+    <div class="app">
+
+        <h1 style="text-align: center; font-size: 35px; color:red"> Boston Sports Moments Quiz</h1>
+
+        <!-- div for the quiz. -->
+        <div class="quiz">
+
+            <h2 id="question"> Question goes here
+            </h2>
+
+            <!-- Div for answer buttons -->
+            <div id="answer-buttons">
+
+                <button class="btn"> Answer 1</button>
+                <button class="btn"> Answer 2</button>
+                <button class="btn"> Answer 3</button>
+                <button class="btn"> Answer 4</button>
+
+            </div>
+
+            <!-- Button to go to next question-->
+            <button id="next-btn"> Next</button>
+
+
+        </div>
+
+    </div>
+   
+
+    <script src="quizScript.js"></script> <!-- this is the script for the quiz portion of the site.-->
+
+
+    <br> <br> 
+
+      <!-- Add an option to jump to the top of the page-->
+    <p style="text-align:center">
+
+        <a href="#topImage"> Jump to top of the page </a>
+
+    </p>
+
+ 
+     <!-- There was an issue with the javaScript where clicking the button to toggle the display of the descriptions did 
+        nothing on the first click, but after works perfectly. While this is not the final fix, I make a quick patch, adding 
+        a script here to trigger a click when the page loads. I know this is not a great solution, but for now it fixes the issue. -->
+    <script>
+        window.addEventListener("load", function() {
+          var toggleButton = document.getElementById("toggleButton");
+          toggleButton.click();
+        });
+      </script> 
+
+
+
+</body>
+
+</html>
+
+<!--
+    Resume at "id"
+
+
+    path:
+    
+file:///Users/alexkouyoumjian/Downloads/HTML%20Practice/BostonSportsMoments.html#topImage
+
+-->
