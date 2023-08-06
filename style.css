@@ -2,15 +2,15 @@ body {
   background-color: lightblue;
   border: 2px solid black;
   font-family: "Times New Roman", Times, serif;
-  margin: 25px;
-  padding: 25px;
+  margin: 1.5%;
+  padding: 1.5%;
 }
 
 .head1 {
   color: white;
-  font-size: 60px;
+  font-size: 5vw;
   text-align: center;
-  margin: 5px;
+  margin: 0.5%;
   background-color: MediumSeaGreen;
   border: 2px solid black;
 }
@@ -23,12 +23,12 @@ body {
 /* a description is the text corresponding to one of the best boston sports moments. Each has a description. */
 .description {
   font-family: "Times New Roman", Times, serif;
-  font-size: 22px;
-  padding: 15px;
+  font-size: 1.5vw;
+  padding: 1.5%;
   color: darkgreen;
   background-color: peachpuff;
   border: 2px solid black;
-  margin: 10px;
+  margin: 0.75%;
   display: block; /* set default display to be showing */
 }
 
@@ -63,7 +63,6 @@ body {
   cursor: pointer; /* change cursor to show pointer when hover over it */
   transition: all 0.25s; /* how quick hover shows from when it is registered */
 }
-
 
 /* CSS FOR QUIZ */
 
@@ -124,12 +123,12 @@ body {
 #next-btn {
   background: darkmagenta;
   color: #fff;
-  font-size: 25px;
+  font-size: 2.5vw;
   font-weight: 500;
-  width: 200px;
-  height: 170px;
+  width: 16vw;
+  height: 14vw;
   border: 0;
-  margin: 20px auto 0;
+  margin: 5% auto 0;
   border-radius: 50%; /* makes button a circle */
   cursor: pointer;
   display: none;
