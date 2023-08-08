@@ -118,12 +118,12 @@ body {
     transition: all 0.3s;
 }
 .toggleButton:hover {
-    background-color: #333;
-    color: white;
-    border-color: #333;
+    background-color: #f9e5c9;
+    color: #333;
+    border-color: #e53935;
+    transform: scale(1.05);
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     animation: pulse 1.5s infinite;
-
 }
 
 /* pulse effect, applied as an animation when hovering over a button. */
@@ -144,17 +144,17 @@ body {
 .openPageBtn {
     background: white;
     color: black;
-    font-size: 1rem;
+    font-size: 15px;
     font-weight: 500;
-    height: 2.5rem;
-    width: 7rem;
-    border: 0.15rem solid #4287f5;
-    padding: 0.5rem;
-    margin: 1rem 0;
+    height: 35px;
+    width: 160px;
+    border: 2px solid black;
+    padding: 5px;
+    margin: 10px 0;
     text-align: center;
-    border-radius: 0.4rem;
+    border-radius: 4px;
     cursor: pointer;
-    transition: background-color 0.3s, color 0.3s, border-color 0.3s, transform 0.3s;
+    transition: all 0.3s;
 }
 .openPageBtn:hover {
     background-color: #f9e5c9;
@@ -261,7 +261,6 @@ body {
     font-size: 35px;
     margin-bottom: 10px;
     text-decoration: underline;
-
 }
 
 .quiz-description h3 {
@@ -269,28 +268,6 @@ body {
     text-align: left;
     margin-top: 0;
     font-style: italic;
-}
-
-/* styling for the toggleButton in the quiz description */
-.quiz-description .toggleButton {
-    background: #001e4d; 
-    color: white;
-    font-size: 0.95vw;
-    font-weight: 500;
-    height: 3rem;
-    padding: 0.7rem 1.5rem; 
-    border: none;
-    border-radius: 0.4rem;
-    cursor: pointer;
-    border: 0.15rem solid #9fd2f2; /* changes border when hovered */
-    transition: background-color 0.3s, color 0.3s, transform 0.3s, border-color 0.3s;
-}
-
-.quiz-description .toggleButton:hover {
-    background-color: #9fd2f2;
-    color: #001e4d;
-    border: 0.15rem solid #001e4d;
-    transform: scale(1.05);
 }
 
 .head1 {
