@@ -1,3 +1,7 @@
+/**
+ * First script for Boston Sports Moments Website by Alex Kouyoumjian. Focuses on functionality for everything but the quiz.
+ */
+
 //This function is to open a page with a given url
 function openPage(url) {
   window.open(url);
@@ -6,7 +10,7 @@ function openPage(url) {
 // This function is to toggle the descriptions under each entry/moment.
 function toggleDescription() {
   var descriptions = document.getElementsByClassName("description"); // get all elements of class
-  var toggleButton = document.getElementById("toggleButton"); // get the button that is pressed.
+  var toggleButtons = document.getElementsByClassName("toggleButton"); // get the button that is pressed.
 
   // iterate through each description and toggle.
   for (var i = 0; i < descriptions.length; i++) {
@@ -20,21 +24,15 @@ function toggleDescription() {
       // else we want to remove it, set display to none
       descriptions[i].style.display = "none"; // Hide description
     }
+  }
 
-    // Immediately update the button text based on the first description's state
+  // Now, update all the buttons' text, based on the first description's state
+  // iterate through each toggle button and update textContent
+  for (var j = 0; j < toggleButtons.length; j++) {
     if (descriptions[0].style.display === "none") {
-      toggleButton.textContent = "Display Descriptions";
+      toggleButtons[j].textContent = "Display Descriptions";
     } else {
-      toggleButton.textContent = "Hide Descriptions";
+      toggleButtons[j].textContent = "Hide Descriptions";
     }
   }
 }
-
-/* old function to just hide description
-  function hideDescription() {
-    var x = document.getElementsByClassName("description");
-    for (var i = 0; i < x.length; i++) {
-      x[i].style.display = "none";
-    }
-  }
-  */

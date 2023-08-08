@@ -1,7 +1,6 @@
 /**
- * Code for Quiz:
+ * Second script for Boston Sports Moments Website by Alex Kouyoumjian. Focuses on functionality the quiz.
  */
-
 const questions = [
   // first question
   {
@@ -88,7 +87,8 @@ const questions = [
 
   // eigth question
   {
-    question: "Which of these four players had the least amount of points in the Celtics Game 6 win in the 2008 NBA Finals?",
+    question:
+      "Which of these four players had the least amount of points in the Celtics Game 6 win in the 2008 NBA Finals?",
     answers: [
       { text: "Paul Pierce", correct: true },
       { text: "Kevin Garnett", correct: false },
@@ -267,5 +267,5 @@ nextButton.addEventListener("click", () => {
   }
 });
 
-//now we start the quiz
+//finally, the quiz is started.
 startQuiz();
