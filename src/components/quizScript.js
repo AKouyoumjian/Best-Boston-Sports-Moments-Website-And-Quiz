@@ -69,7 +69,7 @@ const questions = [
     answers: [
       { text: "James White", correct: true },
       { text: "Legarrette Blunt", correct: false },
-      { text: "Brandon Bolden", correct: false },
+      { text: "Rob Gronkowski", correct: false },
       { text: "Tom Brady", correct: false },
     ],
   },
@@ -228,18 +228,18 @@ function showScore() {
     questionElement.innerHTML =
       scoreMessage +
       "Great Job!" +
-      '<br> <img src="good-job-image.jpg" alt="good job image" height="250" width="250">';
+      '<br> <img src="../src/images/good-job-image.jpg" alt="good job image" height="250" width="250">';
   } else if (scorePercent >= 0.5) {
     // for if score is 50% to 69%
     questionElement.innerHTML =
       scoreMessage +
       "Alright job!" +
-      '<br> <img src="alright-image.jpeg" alt="alright job image" height="250" width="250">';
+      '<br> <img src="../src/images/alright-image.jpeg" alt="alright job image" height="250" width="250">';
   } else {
     questionElement.innerHTML =
       scoreMessage +
       "Poor job!" +
-      '<br> <img src="bad-job-image.jpeg" alt="bad job image" height="275" width="275">';
+      '<br> <img src="../src/images/bad-job-image.jpeg" alt="bad job image" height="275" width="275">';
   }
 
   // now change the next button to show Play Quiz Again instead of Next Question
