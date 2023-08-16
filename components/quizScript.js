@@ -227,24 +227,26 @@ function showScore() {
   if (scorePercent >= 0.7) {
     questionElement.innerHTML =
       scoreMessage +
-      "Great Job!" +
-      '<br> <img src="../src/images/good-job-image.jpg" alt="good job image" height="250" width="250">';
+      "Great Job!" + 
+      '<br> <img src="images/good-job-image.jpg" alt="good job image" height="250" width="250">';
   } else if (scorePercent >= 0.5) {
     // for if score is 50% to 69%
     questionElement.innerHTML =
       scoreMessage +
       "Alright job!" +
-      '<br> <img src="../src/images/alright-image.jpeg" alt="alright job image" height="250" width="250">';
+      '<br> <img src="images/alright-image.jpeg" alt="alright job image" height="250" width="250">';
   } else {
     questionElement.innerHTML =
       scoreMessage +
       "Poor job!" +
-      '<br> <img src="../src/images/bad-job-image.jpeg" alt="bad job image" height="275" width="275">';
+      '<br> <img src="images/bad-job-image.jpeg" alt="bad job image" height="275" width="275">';
   }
+
 
   // now change the next button to show Play Quiz Again instead of Next Question
   nextButton.innerHTML = "Play Quiz Again";
   nextButton.style.display = "block";
+
 }
 
 // function to handle the next button when next question is needed
